@@ -8,7 +8,7 @@ def ret_max_val(in_arr : list):
     return max_val
 
 
-def process_withdrawal(coins, wanting):
+#def process_withdrawal(coins, wanting):
     
 
 
@@ -24,4 +24,8 @@ if __name__ == "__main__":
             spone.append(line)
         else:
             sptwo.append(line)
-    
+    for i in range(len(spone)):
+        print(spone[i])
+        print(sptwo[i])
+
+         
