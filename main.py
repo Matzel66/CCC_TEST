@@ -5,11 +5,15 @@ def ret_max_val(in_arr : list):
     for i in in_arr:
         if int(i) > max_val:
             max_val = int(i)
+<<<<<<< HEAD
     return max_val
 
 
 #def process_withdrawal(coins, wanting):
     
+=======
+    return max_val    
+>>>>>>> refs/remotes/origin/main
 
 
 
@@ -21,6 +25,7 @@ if __name__ == "__main__":
     sptwo = []
     for i, line in enumerate(result["Currency"]):
         if i % 2 == 0:
+            print(spone)
             spone.append(line)
         else:
             sptwo.append(line)
