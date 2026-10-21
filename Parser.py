@@ -9,11 +9,11 @@ def read_file(filename : str):
         Currency = lines[2:]
         for line in Currency:
             line = line.split(' ')
-            line = map(int(), line)
+            #line = map(int, line)
             currencies.append(line)
 
     ret_vals = {"N": N, "C": C, "Currency": currencies}
     print("N =", N)
     print("C =", C)
-    print("Currencies =", Currency)
+    print("Currencies =", currencies)
     return ret_vals 
