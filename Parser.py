@@ -10,7 +10,12 @@ def read_file(filename : str):
         for line in Currency:
             line = line.split(' ')
             #line = map(int, line)
-            currencies.append(line)
+            relm = []
+            for current in line:
+                current = int(current)
+                relm.append(current)
+            currencies.append(relm)
+
 
     ret_vals = {"N": N, "C": C, "Currency": currencies}
     print("N =", N)
