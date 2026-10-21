@@ -1,3 +1,6 @@
+
+
+
 def read_file(filename : str):
     with open(filename, 'r') as file:
         data = file.read()

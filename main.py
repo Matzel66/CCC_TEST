@@ -1,19 +1,16 @@
 from Parser import read_file
+from processing import processing
 
 def ret_max_val(in_arr : list):
     max_val = 0
     for i in in_arr:
         if int(i) > max_val:
             max_val = int(i)
-<<<<<<< HEAD
     return max_val
 
 
 #def process_withdrawal(coins, wanting):
     
-=======
-    return max_val    
->>>>>>> refs/remotes/origin/main
 
 
 
@@ -21,16 +18,15 @@ def ret_max_val(in_arr : list):
 if __name__ == "__main__":
     filename = "Angaben/level-2/in_level-2_0-example.txt"
     result = read_file(filename)
-    spone = []
-    sptwo = []
+    curncy = []
+    amounts = []
     for i, line in enumerate(result["Currency"]):
         if i % 2 == 0:
-            print(spone)
-            spone.append(line)
+            print(curncy)
+            curncy.append(line)
         else:
-            sptwo.append(line)
-    for i in range(len(spone)):
-        print(spone[i])
-        print(sptwo[i])
+            amounts.append(line)
 
-         
+    for coins, values in zip(curncy, amounts):
+        for value in values:
+            processing(value, coins)

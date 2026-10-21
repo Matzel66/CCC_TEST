@@ -6,5 +6,6 @@ def processing(value, coins):
         if result in coins:
             return [c, value-c]
 
-print(processing(10, [1, 2, 5]))
+if __name__ == "__main__":
+    print(processing(10, [1, 2, 5]))
         
